@@ -49,6 +49,8 @@ jobs:
            echo "111111"
            ls ./_site
            echo "222222"
+           ls ./_site/zh
+           echo "333333
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
