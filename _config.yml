@@ -57,6 +57,7 @@ plugins:
 
 languages: ["en", "zh"]
 default_lang: "en"
+exclude_from_localization: ["assets/css", "assets/img"]
 parallel_localization: false
 
 sass:
