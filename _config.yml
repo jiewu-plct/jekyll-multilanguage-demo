@@ -63,4 +63,4 @@ parallel_localization: false
 sass:
   sourcemap: never
 
-# destination: docs
+baseurl: "/jekyll-multilanguage-demo"
