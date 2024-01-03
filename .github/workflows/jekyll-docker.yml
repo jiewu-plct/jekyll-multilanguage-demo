@@ -18,8 +18,8 @@ jobs:
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site --name jekyll \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && echo '123456aaabbb'"
-        docker exec -i jekyll /bin/bash -c "gem install jekyll-polyglot && jekyll build --future"
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && echo '1111111' && jekyll build --future"
+        echo "2222222"
     - name: Push the site to the gh-pages branch
       run: |
         sudo chown $( whoami ):$( whoami ) ${{ github.workspace }}/_site
